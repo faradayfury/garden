@@ -10,6 +10,9 @@
   --color-blue: #205EA6;
   --color-cyan: #24837B;
   --color-green: #66800B;
+  
+  // Smooth transitions for theme changes
+  transition: color 300ms ease, background-color 300ms ease, border-color 300ms ease;
 }
 
 // Dark theme
@@ -69,6 +72,7 @@ body {
   text-align: left;
   background: $color-background;
   font-weight: 350; // Default body text weight
+  transition: color 300ms ease, background-color 300ms ease;
 }
 
 time {
@@ -76,6 +80,7 @@ time {
   color: $color-subtext;
   margin: 0.5em 0 1em;
   font-family: "Geist Mono", monospace;
+  transition: color 300ms ease;
 }
 
 footer {
@@ -85,6 +90,7 @@ footer {
   font-size: 0.8em;
   color: $color-subtext;
   border-top: 1px solid $color-border;
+  transition: color 300ms ease, border-color 300ms ease;
 }
 
 img {
@@ -101,6 +107,7 @@ blockquote {
   font-size: 0.88em;
   background: $color-box-background;
   border-radius: $border-radius;
+  transition: background-color 300ms ease;
 
   p {
     margin: 0;
@@ -113,6 +120,7 @@ hr {
   height: 1px;
   margin: 1.5em 0;
   background: $color-border;
+  transition: background-color 300ms ease;
 }
 
 h1,
@@ -127,6 +135,7 @@ h6 {
   padding-bottom: 0;
   font-weight: 350;
   color: $color-primary;
+  transition: color 300ms ease;
 }
 
 p {
@@ -171,8 +180,11 @@ a {
   color: $color-text;
   transition: color 200ms ease;
   
-  &:hover {
-    color: $color-cyan;
+  // Only apply hover effects on devices that support hover (desktop)
+  @media (hover: hover) {
+    &:hover {
+      color: $color-cyan;
+    }
   }
   
   &:after {
@@ -215,8 +227,11 @@ nav > div {
   font-weight: 350; // Match index page font weight
   text-decoration: none;
   
-  &:hover {
-    color: $color-cyan; // Same hover effect as other links
+  // Only apply hover effects on devices that support hover (desktop)
+  @media (hover: hover) {
+    &:hover {
+      color: $color-cyan; // Same hover effect as other links
+    }
   }
 }
 
@@ -231,10 +246,14 @@ nav > div {
   align-items: center;
   justify-content: center;
   color: $color-subtext;
+  position: relative;
   transition: color 200ms ease;
   
-  &:hover {
-    color: $color-cyan;
+  // Only apply hover effects on devices that support hover (desktop)
+  @media (hover: hover) {
+    &:hover {
+      color: $color-cyan;
+    }
   }
   
   &:focus {
@@ -251,23 +270,32 @@ nav > div {
   display: block;
   width: 16px;
   height: 16px;
+  transition: opacity 300ms ease;
 }
 
 // Show moon icon in light mode, sun icon in dark mode
+.sun-icon,
+.moon-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 300ms ease;
+}
+
 .sun-icon {
-  display: none;
+  opacity: 0;
 }
 
 .moon-icon {
-  display: block;
+  opacity: 1;
 }
 
 [data-theme="dark"] .sun-icon {
-  display: block;
+  opacity: 1;
 }
 
 [data-theme="dark"] .moon-icon {
-  display: none;
+  opacity: 0;
 }
 
 // Dark mode font weight adjustments for visual consistency
@@ -318,8 +346,11 @@ nav a {
   font-size: 18px;
   text-decoration: none;
   
-  &:hover {
-    color: $color-cyan; // Same hover effect as other links
+  // Only apply hover effects on devices that support hover (desktop)
+  @media (hover: hover) {
+    &:hover {
+      color: $color-cyan; // Same hover effect as other links
+    }
   }
 }
 
@@ -331,6 +362,7 @@ nav a {
   background: $color-box-background;
   padding: 1em;
   border-radius: $border-radius;
+  transition: background-color 300ms ease;
 }
 
 code {
@@ -338,6 +370,7 @@ code {
   padding: 0.1em 0.2em;
   border-radius: 4px;
   color: $color-text;
+  transition: background-color 300ms ease, color 300ms ease;
 }
 
 .invalid-link {
@@ -345,6 +378,7 @@ code {
   cursor: help;
   background: $color-box-background;
   padding: 0 0.1em;
+  transition: color 300ms ease, background-color 300ms ease;
 }
 
 .invalid-link-brackets {
@@ -365,17 +399,15 @@ code {
   background: $color-box-background;
   border-radius: $border-radius;
   border: 1px solid $color-border;
+  transition: background-color 300ms ease, border-color 300ms ease;
 }
 
 // Homepage Layout Control
-.homepage-container {
-  // Container for the entire homepage
-}
-
 .section {
   margin-bottom: 56px; // Space after separator line
   padding-bottom: 56px; // Space before separator line
   border-bottom: 1px solid #E6E4D9; // base-100 separator (28px + 1px + 27px = 56px total)
+  transition: border-color 300ms ease;
   
   &:last-child {
     margin-bottom: 0;
@@ -391,6 +423,7 @@ code {
   font-size: 18px;
   font-weight: 350;
   font-family: "Geist Mono", monospace;
+  transition: color 300ms ease;
 }
 
 .section-content, 
@@ -422,6 +455,7 @@ code {
   min-width: 4em; // Control date column width
   flex-shrink: 0;
   font-family: "Geist Mono", monospace;
+  transition: color 300ms ease;
 }
 
 .work-spacer {
@@ -467,8 +501,11 @@ code {
   cursor: pointer;
   transition: transform 200ms ease;
   
-  &:hover {
-    transform: scale(1.02);
+  // Only apply hover effects on devices that support hover (desktop)
+  @media (hover: hover) {
+    &:hover {
+      transform: scale(1.02);
+    }
   }
 }
 
@@ -489,9 +526,11 @@ code {
 }
 
 /* Ensure hover transform works with the offset */
-.photo-item:nth-child(4n+2):hover,
-.photo-item:nth-child(4n):hover {
-  transform: translateY(40px) scale(1.02);
+@media (hover: hover) {
+  .photo-item:nth-child(4n+2):hover,
+  .photo-item:nth-child(4n):hover {
+    transform: translateY(40px) scale(1.02);
+  }
 }
 
 /* Simple Photo Lightbox */
@@ -540,6 +579,7 @@ code {
   font-weight: 350;
   margin-bottom: 8px;
   color: $color-primary;
+  transition: color 300ms ease;
 }
 
 .lightbox-meta {
@@ -547,12 +587,14 @@ code {
   color: $color-subtext;
   margin-bottom: 12px;
   font-family: "Geist Mono", monospace;
+  transition: color 300ms ease;
 }
 
 .lightbox-bio {
   font-size: 16px;
   line-height: 1.5;
   color: $color-text;
+  transition: color 300ms ease;
 }
 
 .lightbox-close {
@@ -569,6 +611,7 @@ code {
 .view-all-link {
   color: $color-subtext;
   font-size: 0.9em;
+  transition: color 300ms ease;
 }
 
 // Writing Section Layout
@@ -589,6 +632,7 @@ code {
   min-width: 4em; // Control date column width
   flex-shrink: 0;
   font-family: "Geist Mono", monospace;
+  transition: color 300ms ease;
 }
 
 .writing-spacer {
@@ -617,8 +661,11 @@ code {
   text-decoration: none;
   transition: color 200ms ease;
   
-  &:hover {
-    color: $color-cyan;
+  // Only apply hover effects on devices that support hover (desktop)
+  @media (hover: hover) {
+    &:hover {
+      color: $color-cyan;
+    }
   }
   
   &:after {
@@ -633,9 +680,26 @@ code {
   }
   
   .work-item {
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-start;
-    gap: 8px; // Smaller gap on mobile
+    gap: 12px; // Space between date and title on mobile
+    width: 100%;
+  }
+  
+  .work-date {
+    flex-shrink: 0;
+    min-width: 4em;
+  }
+  
+  .work-title {
+    flex: 1;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.4;
+  }
+  
+  .work-list {
+    gap: 24px; // Reduced spacing between work items on mobile
   }
   
   .work-spacer {
