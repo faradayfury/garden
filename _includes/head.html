@@ -36,10 +36,13 @@
   <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
 
   {% if page.image %}
-  <meta property="og:image" content="{{ site.url }}{{ page.image }}">
+  <meta property="og:image" content="{{ site.url }}{{ site.baseurl }}{{ page.image }}">
   {% else %}
-  <meta property="og:image" content="https://assets.devfolio.co/content/22d78a81e3624b7b976df7fa6b1afb61/cc1f9bac-91c0-4ac1-8b0c-c5fedba0d7b2.png">
+  <meta property="og:image" content="{{ site.url }}{{ site.baseurl }}/assets/image.jpg">
   {% endif %}
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:type" content="image/jpeg">
 
   <title>
     {% if page.id == "home" %}
