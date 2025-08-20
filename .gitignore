@@ -16,3 +16,7 @@ _includes/notes_graph.json
 
 # Bundler vendor directory
 vendor/
+
+# macOS system files
+.DS_Store
+.DS_Store?
