@@ -7,7 +7,36 @@
       <main>{{ content }}</main>
       <footer>{% include footer.html %}</footer>
     </div>
-
-    {% include link-previews.html wrapperQuerySelector="content" %}
+    
+    <script>
+      // Dark mode toggle functionality
+      (function() {
+        const themeToggle = document.getElementById('theme-toggle');
+        const html = document.documentElement;
+        
+        // Check for saved theme preference or default to 'light'
+        const currentTheme = localStorage.getItem('theme') || 'light';
+        
+        // Apply the current theme
+        if (currentTheme === 'dark') {
+          html.setAttribute('data-theme', 'dark');
+        }
+        
+        // Toggle theme on button click
+        themeToggle.addEventListener('click', function() {
+          const currentTheme = html.getAttribute('data-theme');
+          const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+          
+          if (newTheme === 'dark') {
+            html.setAttribute('data-theme', 'dark');
+          } else {
+            html.removeAttribute('data-theme');
+          }
+          
+          // Save theme preference
+          localStorage.setItem('theme', newTheme);
+        });
+      })();
+    </script>
   </body>
 </html>
