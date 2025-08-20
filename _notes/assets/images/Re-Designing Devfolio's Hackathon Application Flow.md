@@ -520,6 +520,10 @@ After refining the motion with easing for a smoother finish, we had an interacti
 
 This small touch didn’t just visualize progress, it added a sense of momentum and reward that kept users engaged through the application journey.
 
+## 5. Sneak peak of what happens when you submit
+
+![[Pasted image 20250820191307.png]]
+
 ---
 
 ## The Verdict
