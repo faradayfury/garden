@@ -27,7 +27,7 @@ permalink: /
   <section class="section section-work">
     <div class="section-title">my work</div>
     <p class="section-description">
-      for three years, i led design at <a href="https://ethindia.co" style="text-decoration: underline;">ethindia</a> & <a href="https://devfolio.co/discover" style="text-decoration: underline;">devfolio</a> - a platform serving 800k+ builders, hosted 1,300+ hackathons worldwide, 75k+ projects. i worked directly with the ceo and head of engineering, taking projects from initial conversations through research, design, and implementation.
+      for three years, i led design at <a href="https://ethindia.co" style="text-decoration: underline;">ethindia</a> & <a href="https://devfolio.co/discover" style="text-decoration: underline;">devfolio</a> - a platform with 800k+ builders, hosted 1,300+ hackathons worldwide, 75k+ projects. i worked directly with the ceo and head of engineering, taking projects from initial conversations through research, design, and implementation.
     </p>
     
     <div class="work-list">
