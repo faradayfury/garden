@@ -14,7 +14,7 @@ permalink: /
     <p class="section-content">
       i believe the only way to do good work is to care deeply.
       <br><br>
-      after three years of leading design at <a href="https://devfolio.co/discover" style="text-decoration: underline;">devfolio</a>, <a href="https://2586labs.com" style="text-decoration: underline;">2586 labs</a> i realized i'd been running so fast that i'd forgotten why i started walking. so i'm taking a sabbatical—not to step away from design, but to step deeper into it.
+      after three years of leading design at <a href="https://devfolio.co/discover" style="text-decoration: underline;">devfolio</a>, <a href="https://2586labs.com" style="text-decoration: underline;">2586 labs</a> i realized i'd been running so fast that i'd forgotten why i started walking. so i'm on a sabbatical—not to step away from design, but to step deeper into it.
       <br><br>
       i'm drawn to the fundamental questions: what does it mean to design with care? how do constraints create beauty? why do some products feel alive while others feel hollow? i find answers not in trends or best practices, but in the quiet observation of how people actually live and what they genuinely need. i design from empathy, build from first principles, and believe that taking care of people—including yourself—is the foundation of meaningful work.
       <br><br>
