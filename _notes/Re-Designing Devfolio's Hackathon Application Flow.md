@@ -32,7 +32,11 @@ Applying for a hackathon requires the participants to fill up a few details abou
 
 
 ![[Pasted image 20250811160315.png]]
+<br>
+
 ![[Pasted image 20250811160346.png]]
+<br>
+
 ![[Pasted image 20250811160352.png]]
 
 What information captured through the application flow is in complete control of the organizers of a hackathon, they choose and define the fields and information points that should be collected from the participants. Devfolio also stores certain responses of these fields for the participant and auto-fills them for the next hackathon they apply to. This feature, meant to save time, would become the source of our biggest problem.
