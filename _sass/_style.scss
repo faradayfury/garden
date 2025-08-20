@@ -5,6 +5,7 @@
   --color-text: #403E3C;
   --color-subtext: #9F9D96;
   --color-border: #E6E4D9;
+  --color-separator: #E6E4D9;
   --color-box-background: #F2F0E5;
   --color-background: #FFFCF0;
   --color-blue: #205EA6;
@@ -21,6 +22,7 @@
   --color-text: #D1D0CA;       // base-200 for white text
   --color-subtext: #878580;    // base-600 for remaining
   --color-border: #878580;     // base-600 for remaining
+  --color-separator: #282726;  // base-850 for separators
   --color-box-background: #403E3C; // Slightly lighter than background for contrast
   --color-background: #100F0F; // black background
   --color-blue: #4385BE;
@@ -33,6 +35,7 @@ $color-primary: var(--color-primary);
 $color-text: var(--color-text);
 $color-subtext: var(--color-subtext);
 $color-border: var(--color-border);
+$color-separator: var(--color-separator);
 $color-box-background: var(--color-box-background);
 $color-background: var(--color-background);
 $color-blue: var(--color-blue);
@@ -406,7 +409,7 @@ code {
 .section {
   margin-bottom: 56px; // Space after separator line
   padding-bottom: 56px; // Space before separator line
-  border-bottom: 1px solid #E6E4D9; // base-100 separator (28px + 1px + 27px = 56px total)
+  border-bottom: 1px solid $color-separator; // Uses CSS variable for theme support
   transition: border-color 300ms ease;
   
   &:last-child {
