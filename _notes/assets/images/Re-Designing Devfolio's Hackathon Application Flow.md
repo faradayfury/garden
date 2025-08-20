@@ -3,7 +3,7 @@ title: Re-Designing Devfolio's Hackathon Application Flow
 date: 2025-08-19
 ---
 
-Devfolio's hackathon application flow was losing about 75% of users before they even started. We redesigned it into a transparent, mobile-first experience that cut drop-offs in half and boosted completion rates across the board.
+Devfolio's hackathon application flow was losing about 75% of users before they even started. We redesigned it to cut drop-offs in half and boost completion rates across the board.
 <br>
 <br>
 
