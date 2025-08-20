@@ -530,18 +530,15 @@ This small touch didn’t just visualize progress, it added a sense of momentum 
 
 We decided to hide the new interface under a feature flag and only enable it for selected hackathons at the start so we can pay close attention to a larger group of users interact with it. Here is what we found:
 
-**1. Drop-off rate:** 75% → 31%
-
+Drop-off rate: 75% → 31%
 - Users no longer bounced immediately upon seeing the interface
 - The clear section structure with visual progress indicators kept them engaged
 
-**2. Mobile completion rate:** 5% → 22%
-
+Mobile completion rate: 5% → 22%
 - Not quite desktop parity, but a great improvement
 - Users could now realistically complete applications on their phones
-
-**3. Single-session completion:** 10% → 42%
-
+  
+Single-session completion: 10% → 42%
 - The visual map helped users gauge time commitment upfront
 - Auto-save meant they could confidently return if needed
 
