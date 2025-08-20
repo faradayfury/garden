@@ -214,7 +214,10 @@ We implemented the following changes:
    - Countdown timer for application deadline
    - Sticky submit button that activates upon completion
 
-![[Pasted image 20250813165311.png]]![[Pasted image 20250813173210.png]]
+![[Pasted image 20250813165311.png]]
+<br>
+
+![[Pasted image 20250813173210.png]]
 
 ---
 
@@ -304,7 +307,7 @@ Through this iterative process, we developed several new hypotheses that would g
 
 6. If we show both section completion indicators and overall percentage filled, users gain micro and macro progress visibility - instantly identifying which sections are pre-filled versus incomplete.
 
-We started iterating to figure out how a new user interface built around our hypothesis of providing our users a visual map of all the sections at the start, i was instantly reminded of the first screen a user sees when they click on 'Apply now'. (current implementation)
+We started iterating to figure out how a new user interface built around our hypothesis of providing our users a visual map of all the sections at the start, i was instantly reminded of the first screen a user sees when they click on 'Apply now' (current implementation)
 
 ![[Pasted image 20250811160315.png]]
 
@@ -350,7 +353,9 @@ The solution was starring right at my face, i knew instantly what direction i wo
 
 This approach successfully balances our competing needs: providing users with both a clear map of their journey AND focused task presentation, while maintaining transparency without doubling completion time.
 
-![[Pasted image 20250816172405.png]]![[Pasted image 20250816180908.png]]
+![[Pasted image 20250816172405.png]]
+<br>
+![[Pasted image 20250816180908.png]]
 
 ---
 
@@ -423,8 +428,10 @@ While our core navigation solution solved the major problems, shipping a product
 Hackathons aren't solo endeavors for most participants - about 80% apply as teams. Our previous system treated team formation as an afterthought, causing chaos: duplicate applications, missing teammates, and confused organizers receiving partial team submissions.
 
 We designed a new team flow with clear ownership and visibility:
+<br>
+<br>
 
-\*\*The Team Card
+The Team Card
 
 ![[Pasted image 20250818230821.png]]
 
@@ -437,8 +444,11 @@ The team card became the central hub for coordination. At a glance, teams could 
 - Admin can only submit when all the team members have filled their applications to 100%.
 
 This transparency transformed team dynamics. Instead of awkward "did you finish your application?" messages, teams had instant visibility.
+<br>
+<br>
 
-\*\*Inviting Hackers
+
+Inviting Hackers
 
 ![[Pasted image 20250818230832.png]]
 
@@ -447,8 +457,11 @@ We democratized the invite process - any team member could share an invite code.
 - Teams could parallelize recruitment (no bottleneck on one person)
 - The invite code system worked universally - paste it anywhere from Discord/Telegram/WhatsApp etc.
 - Team size limits enforced automatically
+<br>
+<br>
+<br>
 
-**The Submission Gate**
+The Submission Gate
 
 ![[Pasted image 20250818231250.png]]
 

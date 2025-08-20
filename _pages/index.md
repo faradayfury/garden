@@ -7,17 +7,27 @@ permalink: /
 
 <div class="homepage-container">
   
+  <img src="https://assets.devfolio.co/content/22d78a81e3624b7b976df7fa6b1afb61/cc1f9bac-91c0-4ac1-8b0c-c5fedba0d7b2.png" alt="Header image" style="width: 100%; height: auto; margin-bottom: 56px;">
+  
   <section class="section section-about">
-    <div class="section-title">About</div>
+    <div class="section-title">about me</div>
     <p class="section-content">
-      Anish, often goes by Faraday; is a multi-disciplinary designer who cares deeply about the craft of building software. He used to head design at <a href="https://devfolio.co/discover" style="text-decoration: underline;">Devfolio</a>, <a href="https://2586labs.com" style="text-decoration: underline;">2586 Labs</a> and now on a sabbatical.
+      i believe the only way to do good work is to put your heart and soul into it.
+      <br><br>
+      after three years of leading design at <a href="https://devfolio.co/discover" style="text-decoration: underline;">devfolio</a>, <a href="https://2586labs.com" style="text-decoration: underline;">2586 labs</a> i realized i'd been running so fast that i'd forgotten why i started walking. so I'm taking a sabbatical—not to step away from design, but to step deeper into it.
+      <br><br>
+      i'm drawn to the fundamental questions: what does it mean to design with care? how do constraints create beauty? why do some products feel alive while others feel hollow? i find answers not in trends or best practices, but in the quiet observation of how people actually live and what they genuinely need. i design from empathy, build from first principles, and believe that taking care of people—including yourself—is the foundation of meaningful work.
+      <br><br>
+      currently, i'm spending my time reading on substack, books, writing, learning to code, taking pictures and rediscovering what it means to work with both intensity and balance. i'm fascinated by companies like obsidian and mymind—places where philosophy and product are inseparable.
+      <br><br>
+      if you're building something that puts human needs before growth metrics, or if you simply want to chat about why good design feels like coming home, i'd love to hear from you.
     </p>
   </section>
 
   <section class="section section-work">
-    <div class="section-title">Work & Myself</div>
+    <div class="section-title">my work</div>
     <p class="section-description">
-      Over the course of last 3 years at Devfolio (2022 - 2025) Anish has worked on countless projects, but only a few have seen the light of being featured here.
+      for three years, i led design at <a href="https://ethindia.co" style="text-decoration: underline;">ethindia</a> & <a href="https://devfolio.co/discover" style="text-decoration: underline;">devfolio</a> - a platform serving 800k+ builders, hosted 1,300+ hackathons worldwide, 75k+ projects. i worked directly with the ceo and head of engineering, taking projects from initial conversations through research, design, and implementation.
     </p>
     
     <div class="work-list">
@@ -26,16 +36,23 @@ permalink: /
       <div class="work-item">
         <span class="work-date">{% if note.date %}{{ note.date | date: "%m · %Y" }}{% else %}{{ note.last_modified_at | date: "%m · %Y" }}{% endif %}</span>
         <span class="work-spacer"></span>
-        <a href="{{ site.baseurl }}{{ note.url }}" class="work-title internal-link">{{ note.title }}</a>
+        <a href="{{ site.baseurl }}{{ note.url }}" class="work-title internal-link">{{ note.title | downcase }}</a>
       </div>
       {% endfor %}
     </div>
   </section>
 
   <section class="section section-photography">
-    <div class="section-title">Photography</div>
+    <div class="section-title">photos</div>
     <p class="section-description">
-      This is where it all started, I shoot with a FujiFilm x100F camera. I have been to multiple places throughout the world and I love taking pictures to document.
+      this is where it all started, i like to document the world i see around myself with a <span class="camera-link" 
+           data-caption="" 
+           data-location="" 
+           data-date=""
+           data-bio=""
+           data-src="https://assets.devfolio.co/content/22d78a81e3624b7b976df7fa6b1afb61/816f05c6-75dc-452b-8cd9-930504896876.png"
+           onclick="openLightbox(this)"
+           style="cursor: pointer; text-decoration: underline;">fujifilm x100f</span> camera and my iphone.
     </p>
     
     <div class="photo-grid">

@@ -2,9 +2,13 @@
 layout: default
 ---
 
+<script>
+  document.body.classList.add('note-page');
+</script>
+
 <article class="note-layout">
   <div class="back-button-container">
-    <a href="/" class="back-button">← Back</a>
+    <a href="/" class="back-button">← back</a>
   </div>
 
   <div>
@@ -22,3 +26,79 @@ layout: default
     </content>
   </div>
 </article>
+
+<!-- Image Lightbox for Notes -->
+<div class="photo-lightbox" id="noteLightbox" onclick="closeNoteLightbox(event)">
+  <div class="lightbox-content">
+    <button class="lightbox-close" onclick="closeNoteLightbox()">&times;</button>
+    <img class="lightbox-image" id="noteLightboxImage" src="" alt="">
+    <div class="lightbox-info" id="noteLightboxInfo">
+      <div class="lightbox-caption" id="noteLightboxCaption"></div>
+      <div class="lightbox-meta" id="noteLightboxMeta"></div>
+      <div class="lightbox-bio" id="noteLightboxBio"></div>
+    </div>
+  </div>
+</div>
+
+<script>
+function openNoteLightbox(element) {
+  const lightbox = document.getElementById('noteLightbox');
+  const image = document.getElementById('noteLightboxImage');
+  const caption = document.getElementById('noteLightboxCaption');
+  const meta = document.getElementById('noteLightboxMeta');
+  const bio = document.getElementById('noteLightboxBio');
+  const info = document.getElementById('noteLightboxInfo');
+  
+  // Get image source and metadata
+  const src = element.src;
+  const alt = element.alt || '';
+  const filename = src.split('/').pop();
+  
+  // Set image
+  image.src = src;
+  image.alt = alt;
+  
+  // Set caption (use alt text or filename)
+  caption.textContent = alt || filename;
+  
+  // Set meta information (filename if we have alt text, or just show filename)
+  meta.textContent = alt ? filename : '';
+  
+  // Hide info section for note images (clean lightbox with just the image)
+  info.style.display = 'none';
+  
+  // Show lightbox
+  lightbox.classList.add('show');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeNoteLightbox(event) {
+  // Don't close if clicking on the content
+  if (event && event.target.closest('.lightbox-content') && !event.target.classList.contains('lightbox-close')) {
+    return;
+  }
+  
+  const lightbox = document.getElementById('noteLightbox');
+  lightbox.classList.remove('show');
+  document.body.style.overflow = '';
+}
+
+// Make all images in the note content clickable
+document.addEventListener('DOMContentLoaded', function() {
+  const contentImages = document.querySelectorAll('.note-layout content img');
+  
+  contentImages.forEach(function(img) {
+    img.style.cursor = 'pointer';
+    img.addEventListener('click', function() {
+      openNoteLightbox(this);
+    });
+  });
+});
+
+// Close on Escape key
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') {
+    closeNoteLightbox();
+  }
+});
+</script>
