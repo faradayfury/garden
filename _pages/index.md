@@ -12,7 +12,7 @@ permalink: /
   <section class="section section-about">
     <div class="section-title">about me</div>
     <p class="section-content">
-      i believe the only way to do good work is to put your heart and soul into it.
+      i believe the only way to do good work is to and care deeply.
       <br><br>
       after three years of leading design at <a href="https://devfolio.co/discover" style="text-decoration: underline;">devfolio</a>, <a href="https://2586labs.com" style="text-decoration: underline;">2586 labs</a> i realized i'd been running so fast that i'd forgotten why i started walking. so I'm taking a sabbatical—not to step away from design, but to step deeper into it.
       <br><br>
