@@ -39,20 +39,24 @@ permalink: /
         <a href="{{ site.baseurl }}{{ note.url }}" class="work-title internal-link">{{ note.title | downcase }}</a>
       </div>
       {% endfor %}
+      
+      <div style="margin-top: 8px;">
+        <span style="color: var(--color-subtext); font-style: italic; text-decoration: none;">more coming soon</span>
+      </div>
     </div>
   </section>
 
   <section class="section section-photography">
     <div class="section-title">photos</div>
     <p class="section-description">
-      this is where it all started, i like to document the world i see around myself with a <span class="camera-link" 
+      this is where it all started, i like to document the world i see around myself with my <span class="camera-link" 
            data-caption="" 
            data-location="" 
            data-date=""
            data-bio=""
            data-src="https://assets.devfolio.co/content/22d78a81e3624b7b976df7fa6b1afb61/816f05c6-75dc-452b-8cd9-930504896876.png"
            onclick="openLightbox(this)"
-           style="cursor: pointer; text-decoration: underline;">fujifilm x100f</span> camera and my iphone.
+           style="cursor: pointer; text-decoration: underline;">fujifilm x100f</span> camera and iphone.
     </p>
     
     <div class="photo-grid">
