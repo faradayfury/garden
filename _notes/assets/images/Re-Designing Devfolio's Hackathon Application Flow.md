@@ -559,7 +559,7 @@ This redesign wasn't just about fixing a form - it was about positioning Devfoli
 
 Solving the 75% drop-off was only the first step. In redesigning the application flow, we also uncovered new opportunities to expand how Devfolio supports hackers beyond the form itself.
 
-## From Functional Teams to Social Teams
+### From Functional Teams to Social Teams
 
 Our invite-code system fixed coordination for existing groups, but hackathons are also where thousands of solo developers come to find collaborators. There’s a chance to evolve team formation from purely transactional to genuinely social:
 
@@ -568,7 +568,7 @@ Our invite-code system fixed coordination for existing groups, but hackathons ar
 - Skill-based matching that suggests teammates based on profile data and past experience
 - Lightweight request-to-join flows that make it easy for solo builders to pitch themselves
 
-## Richer Collaboration Tools
+### Richer Collaboration Tools
 
 We also see room to make inviting and managing teammates less brittle:
 
@@ -576,6 +576,6 @@ We also see room to make inviting and managing teammates less brittle:
 - Previews that show team composition before accepting an invite
 - A dashboard for managing invites, pending requests, and confirmations
 
-## Beyond Application: The Hackathon Journey
+### Beyond Application: The Hackathon Journey
 
 Submitting an application is just one part of participating. With the new design foundations in place, we’re excited to reimagine what happens after submission - from tracking application status to preparing for the event itself. This will form the basis of a more complete “Hackathon Dashboard” that carries participants from application to check-in and beyond.
