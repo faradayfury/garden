@@ -9,7 +9,7 @@
 
   <meta property="og:site_name" content="{{ site.title }}">
 
-  <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgo=">
+  <link rel="icon" type="image/png" href="{{ site.baseurl }}/assets/favicon.png">
 
   <!-- Using local Geist font -->
   <link rel="stylesheet" href="{{ site.baseurl }}/styles.css">
@@ -37,6 +37,8 @@
 
   {% if page.image %}
   <meta property="og:image" content="{{ site.url }}{{ page.image }}">
+  {% else %}
+  <meta property="og:image" content="https://assets.devfolio.co/content/22d78a81e3624b7b976df7fa6b1afb61/cc1f9bac-91c0-4ac1-8b0c-c5fedba0d7b2.png">
   {% endif %}
 
   <title>
