@@ -30,10 +30,6 @@ Applying for a hackathon requires the participants to fill up a few details abou
 - Choose solo or team participation
 - Additional questions by the organizers
 
-![[Pasted image 20250820140542.png]]
-
-
-![[Pasted image 20250820135141.png]]
 
 ![[Pasted image 20250811160315.png]]
 ![[Pasted image 20250811160346.png]]

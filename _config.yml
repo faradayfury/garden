@@ -9,6 +9,9 @@ exclude:
     "_notes/assets/**/*.gif",
     "_notes/assets/**/*.webp",
     "_notes/assets/**/*.svg",
+    "_notes/assets/**/*.mov",
+    "_notes/assets/**/*.mp4",
+    "_notes/assets/**/*.webm",
   ]
 # You may need to change the base URL depending on your deploy configuration.
 # For Vercel deployment, use the repository name if deployed to a subdirectory
