@@ -1,8 +1,9 @@
 ---
 title: A note about cats
+date: 2024-02-10
 ---
 
-This is a second note with a poem with cats. 
+This is a second note with a poem with cats.
 
 Here's a link to a note that explains why it's important to [[move your body every day]].
 

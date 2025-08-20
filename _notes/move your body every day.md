@@ -1,4 +1,6 @@
 ---
+title: Move your body every day
+date: 2024-01-20
 ---
 
 Move your body every day. Benefits include:
