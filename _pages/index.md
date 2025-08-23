@@ -7,7 +7,7 @@ permalink: /
 
 <div class="homepage-container">
   
-  <img src="https://assets.devfolio.co/content/22d78a81e3624b7b976df7fa6b1afb61/cc1f9bac-91c0-4ac1-8b0c-c5fedba0d7b2.png" alt="Header image" style="width: 100%; height: auto; margin-bottom: 56px;">
+  <img src="{{ site.baseurl }}/assets/image.png" alt="Header image" style="width: 100%; height: auto; margin-bottom: 56px;" loading="lazy">
   
   <section class="section section-about">
     <div class="section-title">about me</div>
@@ -49,14 +49,7 @@ permalink: /
   <section class="section section-photography">
     <div class="section-title">photos</div>
     <p class="section-description">
-      this is where it all started, i like to document the world i see around myself with my <span class="camera-link" 
-           data-caption="" 
-           data-location="" 
-           data-date=""
-           data-bio=""
-           data-src="https://assets.devfolio.co/content/22d78a81e3624b7b976df7fa6b1afb61/816f05c6-75dc-452b-8cd9-930504896876.png"
-           onclick="openLightbox(this)"
-           style="cursor: pointer; text-decoration: underline;">fujifilm x100f</span> camera and iphone.
+      this is where it all started, i like to document the world i see around myself with my <span class="camera-link" style="text-decoration: underline;">fujifilm x100f</span> and iphone.
     </p>
     
     <div class="photo-grid">
