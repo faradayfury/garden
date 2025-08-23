@@ -45,3 +45,4 @@ class YouTubeEmbedGenerator < Jekyll::Generator
     HTML
   end
 end
+

@@ -1,4 +1,4 @@
-# faraday's garden
+# faraday's garden 🌻
 
 A personal website and digital garden showcasing design work, thoughts, and photography. Built with Jekyll and designed for thoughtful exploration of ideas and creative work.
 
