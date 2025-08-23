@@ -23,6 +23,10 @@ open_external_links_in_new_tab: true
 # as their browser will communicate with Twitter's servers.
 embed_tweets: false
 
+# Set to `true` to replace YouTube URLs with YouTube video embeds.
+# This will automatically embed videos from youtube.com and youtu.be links
+embed_youtube: true
+
 permalink: pretty
 relative_permalinks: false
 

@@ -516,7 +516,7 @@ I used Claude to quickly prototype the animation. By providing the base SVG for 
 
 After refining the motion with easing for a smoother finish, we had an interaction that felt both functional and delightful. The engineering team could drop the code straight into production, making it one of the fastest wins of the project.
 
-![[Screen Recording 2025-04-01 at 1.16.38 PM.mov]]
+https://www.youtube.com/watch?v=6K3ceMfCkew
 
 This small touch didn’t just visualize progress, it added a sense of momentum and reward that kept users engaged through the application journey.
 
