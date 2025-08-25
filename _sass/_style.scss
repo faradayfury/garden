@@ -91,7 +91,7 @@ footer {
   margin-top: 40px;
   padding-top: 40px;
   font-size: 16px;
-  color: $color-text;
+  color: $color-subtext;
   border-top: 1px solid $color-border;
   transition: color 300ms ease, border-color 300ms ease;
 }
@@ -231,6 +231,7 @@ nav > div {
 .nav-links {
   margin-left: auto;
   display: flex;
+  align-items: baseline;
   gap: 1em;
 }
 
@@ -238,6 +239,9 @@ nav > div {
   color: $color-subtext; // base-400 color for navigation links
   font-weight: 350; // Match index page font weight
   text-decoration: none;
+  line-height: 1;
+  display: inline-block;
+  vertical-align: baseline;
   
   // Only apply hover effects on devices that support hover (desktop)
   @media (hover: hover) {
@@ -254,12 +258,13 @@ nav > div {
   cursor: pointer;
   padding: 0;
   margin: 0;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  display: inline-block;
   color: $color-subtext;
   position: relative;
-  transition: color 200ms ease;
+  transition: color 200ms ease, transform 200ms ease;
+  vertical-align: baseline;
+  line-height: 1;
+  transform: translateY(2px); // Fine-tune vertical position
   
   // Only apply hover effects on devices that support hover (desktop)
   @media (hover: hover) {
@@ -350,6 +355,99 @@ nav a {
   font-weight: 350 !important; // Ensure all nav links use 350 weight
 }
 
+// Dropdown styling
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  color: $color-subtext;
+  font-weight: 350;
+  font-size: 18px;
+  font-family: $font-family;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
+  transition: color 200ms ease;
+  line-height: 1;
+  vertical-align: baseline;
+  
+  // Only apply hover effects on devices that support hover (desktop)
+  @media (hover: hover) {
+    &:hover {
+      color: $color-cyan;
+    }
+  }
+  
+  &:focus {
+    outline: none;
+  }
+  
+  &:focus-visible {
+    outline: 1px solid $color-cyan;
+    outline-offset: 2px;
+  }
+}
+
+.dropdown-arrow {
+  transition: transform 200ms ease;
+}
+
+.dropdown.open .dropdown-arrow {
+  transform: rotate(180deg);
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: $color-background;
+  border: 1px solid $color-border;
+  border-radius: $border-radius;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  min-width: 160px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-8px);
+  transition: opacity 200ms ease, visibility 200ms ease, transform 200ms ease;
+  z-index: 1000;
+  padding: 0.5em 0;
+}
+
+.dropdown.open .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.dropdown-item {
+  display: block;
+  padding: 0.5em 1em;
+  color: $color-text;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 350;
+  transition: background-color 200ms ease, color 200ms ease;
+  
+  // Only apply hover effects on devices that support hover (desktop)
+  @media (hover: hover) {
+    &:hover {
+      background: $color-box-background;
+      color: $color-cyan;
+    }
+  }
+}
+
+// Dark mode adjustments for dropdown
+[data-theme="dark"] .dropdown-menu {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
 
 // Site title specific styling
 .site-title {
