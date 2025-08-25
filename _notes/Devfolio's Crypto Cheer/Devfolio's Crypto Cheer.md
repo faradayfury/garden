@@ -232,7 +232,7 @@ The carousel interface let users browse through our four sticker options, each w
 
 ### Checkout with Meaning
 
-The summary screen showed all selected stickers with the total ETH cost, maintaining transparency about the transaction. But here's where we added unexpected depth: after wallet connection, users could add a personal message. This wasn't in our original sprint plan, but we squeezed it in after early testers said cheering felt incomplete without being able to say _why_ they were cheering.
+The summary screen showed all selected stickers with the total ETH cost, maintaining transparency about the transaction. But here's where we added unexpected depth: after wallet connection, users could add a personal message. This wasn't in our original sprint plan, but we squeezed it in after early testers said cheering felt incomplete without being able to say why they were cheering.
 
 These messages became "cheered comments" on project pages—not just financial support but specific feedback about what resonated. It transformed each cheer from a transaction into a relationship.
 
