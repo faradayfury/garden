@@ -30,11 +30,36 @@ class ObsidianImageConverter < Jekyll::Generator
     obsidian_image_pattern = /!\[\[([^|\]]+\.(png|jpe?g|gif|webp|svg))(\|([^\]]+))?\]\]/i
     
     doc.content.gsub!(obsidian_image_pattern) do |match|
-      image_filename = $1
-      alt_text = $4 || File.basename(image_filename, File.extname(image_filename))
+      image_path = $1
+      alt_text = $4 || File.basename(image_path, File.extname(image_path))
+      
+      # Determine the base path for this document
+      if doc.path.include?('/_notes/')
+        # Extract the relative path from _notes directory
+        relative_path = doc.path.split('/_notes/')[1]
+        # Get the directory of the current document relative to _notes
+        doc_dir = File.dirname(relative_path)
+        
+        # If image_path is relative (starts with assets/), use it relative to the document
+        if image_path.start_with?('assets/')
+          full_image_path = "#{doc_dir}/#{image_path}"
+        else
+          # If it's just a filename, look in the document's assets folder first,
+          # then fall back to the old location
+          doc_assets_path = File.join(File.dirname(doc.path), 'assets', image_path)
+          if File.exist?(doc_assets_path)
+            full_image_path = "#{doc_dir}/assets/#{image_path}"
+          else
+            full_image_path = "assets/images/#{image_path}"
+          end
+        end
+      else
+        # For pages not in _notes, use the old path
+        full_image_path = "assets/images/#{image_path}"
+      end
       
       # Convert to Jekyll format with proper path
-      "![#{alt_text}]({{ site.baseurl }}/_notes/assets/images/#{image_filename})"
+      "![#{alt_text}]({{ site.baseurl }}/_notes/#{full_image_path})"
     end
   end
 end
