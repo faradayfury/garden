@@ -17,7 +17,7 @@ Cheering is a way of supporting the projects and builders you love on Devfolio. 
 
 Devfolio hosts 800k+ builders who've submitted 75k+ projects across 1,300+ hackathons. But our data revealed a sobering truth: less than 10% of projects showed any activity 30 days post-event. Even prize-winning projects, validated by judges, lost momentum.
 
-The creator economy had already solved this. GitHub Sponsors hit $100M+ in developer sponsorships. Buy Me a Coffee processed millions. The model worked, but hackathon projects fell through the cracks because:
+The creator economy had already solved this. GitHub Sponsors hit $33M+ in developer sponsorships. Buy Me a Coffee processed millions. The model worked, but hackathon projects fell through the cracks because:
 
 - Too nascent for GitHub Sponsors (which favors established libraries)
 - Not content creators for Buy Me a Coffee
