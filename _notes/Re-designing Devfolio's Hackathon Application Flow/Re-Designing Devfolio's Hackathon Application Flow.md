@@ -147,13 +147,9 @@ Who's using the application flow?
 What are their motives for visiting the application page?
 
 - To quickly apply to a hackathon they discovered
-
 - To complete a partially filled application
-
 - To review hackathon requirements before submitting
-
 - To check/update their application status (addressed in Dashboard)
-
 - To form or join teams for the hackathon
 
 ---
