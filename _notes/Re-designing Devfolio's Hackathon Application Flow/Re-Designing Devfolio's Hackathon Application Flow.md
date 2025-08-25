@@ -5,6 +5,8 @@ date: 2025-08-19
 
 Devfolio's hackathon application flow was losing about 75% of users before they even started. We redesigned it to cut drop-offs in half and boost completion rates across the board.
 <br>
+<br>
+
 ![[Pasted image 20250825141619.png]]
 
 ---
