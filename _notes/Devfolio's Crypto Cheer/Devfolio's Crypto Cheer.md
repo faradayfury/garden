@@ -5,6 +5,8 @@ date: 2025-08-10
 
 Cheering is a way of supporting the projects and builders you love on Devfolio. We turned hackathon projects into investable ideas. Since launch, Crypto Cheer has processed over 2 ETH in direct builder support.
 
+![[Pasted image 20250825141213.png]]
+
 ---
 
 ## Context
