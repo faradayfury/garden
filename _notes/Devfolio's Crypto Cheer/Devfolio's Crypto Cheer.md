@@ -170,12 +170,14 @@ We made the deliberate choice for automatic equal splits among team members. No 
 - This prevented team friction over contribution percentages
 - Simplified the smart contract logic
 - Also aligned with hackathon culture of collaborative building
+<br>
 
 Transparency Mechanisms
 
 - Every transaction visible on Etherscan
 - Team member addresses public on through the splitting smart contract
 - Running total of support displayed prominently
+<br>
 
 The Sticker System
 
