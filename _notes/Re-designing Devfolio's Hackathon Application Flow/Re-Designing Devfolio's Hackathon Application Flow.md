@@ -394,7 +394,7 @@ We understood, the cognitive load wasn't from seeing the fields - it was from no
 
 While our core navigation solution solved the major problems, shipping a production-ready experience meant addressing dozens of edge cases and micro-interactions. These decisions would determine whether our solution actually worked in the wild.
 
-1. Team Formation: The Collaboration Challenge
+## 1. Team Formation: The Collaboration Challenge
 
 Hackathons aren't solo endeavors for most participants - about 80% apply as teams. Our previous system treated team formation as an afterthought, causing chaos: duplicate applications, missing teammates, and confused organizers receiving partial team submissions.
 
