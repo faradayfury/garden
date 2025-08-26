@@ -17,7 +17,7 @@ Devfolio is the leading platform for builder economic opportunities through hack
 
 Our hackathon application flow processes 50,000+ monthly participants. But we were hemorrhaging opportunity: 75% abandoned before even starting – roughly 37,500 builders lost each month.
 
-Hackathons drive 70% of our platform engagement, and successful participants have 3x higher lifetime value. Every abandoned application meant losing potential project contributors, mentors, and future organizers. Poor completion rates also risked our standing with event organizers who needed robust applicant pools.
+Hackathons drive 70% of our platform engagement, and successful participants tend to come back more often. Every abandoned application meant losing potential project contributors, mentors, and future organizers. Poor completion rates also risked our standing with event organizers who needed robust applicant pools.
 
 While competitors treated applications as simple Google Forms, we saw our biggest differentiation opportunity: turn our application flow into a competitive moat that would make Devfolio the obvious choice for serious hackathon organizers.
 
@@ -74,8 +74,6 @@ B. Watching the User Recordings:
 
 While the initial purpose for this was to get more visibility on how the users interacted with the interface, we quickly discovered more & broader issues which increased the scope for the project.
 
-The shocking numbers we couldn't ignore:
-
 - Users would struggle to find the submit button (the most important action was playing hide-and-seek)
 
 - About 75% of the users would drop off from the webpage after getting to the application flow.
@@ -91,8 +89,6 @@ The shocking numbers we couldn't ignore:
 C. User Interviews
 
 To identify and gather more information on how participants approached applying to a hackathon, we setup a total of 6 user interviews, 3 seasoned hackathon participants on Devfolio and 3 users who were relatively newer to the platform and had participated in only 1-2 hackathons.
-
-What they told us & we observed changed everything:
 
 - They would only come to Devfolio to apply to hackathons and were not aware of their Devfolio profile where they can edit their information. ("Wait, I have a profile?")
 
@@ -114,7 +110,7 @@ From the comprehensive research above, our priorities became clear. We needed to
    <br>
    <br>
 
-2. How might we create a mobile-first responsive experience?
+2. How might we create a mobile responsive experience?
 
    With ~40% of users applying via mobile devices (often coming from Twitter) but facing a non-responsive interface, we're forcing ~20,000 users monthly to "come back later on desktop." Most never did.
    <br>
@@ -156,14 +152,6 @@ What are their motives for visiting the application page?
 
 ## Solution Design
 
-Based on the approach evaluation, we had identified the core problems to tackle, but determining the optimal way to solve them required extensive exploration. The application flow had become a Gordian knot - we needed to untangle it without breaking what worked.
-
-We explored numerous directions through rapid prototyping:
-
-- Should pre-filled data be shown inline or in a separate review step?
-- Would a multi-step application perform better than a single scrollable form?
-- How much information could we reasonably display on mobile without overwhelming users?
-
 After multiple design sprints and rounds of internal feedback, we converged on an approach. The support team's insights about user confusion and the operations team's data on drop-off patterns helped us identify which solutions to prioritize for testing.
 
 Through this iterative process, we developed several hypotheses that would guide our first testable prototype:
@@ -183,8 +171,6 @@ Through this iterative process, we developed several hypotheses that would guide
 ---
 
 ## What we built
-
-We implemented the following changes:
 
 1. Section-based navigation
 
@@ -220,10 +206,6 @@ We implemented the following changes:
 
 ## First approach (what worked, what didn’t)
 
-We showed a prototype of the above designs to a few seasoned & new hackers to get their unbiased perspective and feedback. What they told us was both validating and humbling.
-<br>
-<br>
-
 What Worked (Our Victory Lap):
 
 - Users appreciated seeing all form fields, even when pre-populated with data. This transparency helped them understand exactly what information was being submitted and allowed them to make precise corrections where needed.
@@ -253,8 +235,6 @@ We'd solved one problem but created another.
 ---
 
 ## The insights we gained
-
-After receiving this feedback, we tested the prototype with a few more people to see if patterns emerged. What we discovered was a universal behavior we hadn't anticipated:
 
 - We successfully solved the problem of user paralysis - participants had clear starting points and began engaging immediately. However, the new interface created spatial amnesia - users lost sense of where they were in the journey.
 
@@ -288,9 +268,7 @@ We explored numerous directions:
 - How might we indicate which sections are already complete via pre-filled data?
 - How could we visually differentiate "review-only" sections from "action-required" sections?
 
-After multiple design sprints and rounds of internal feedback, we converged on a approach. The user research showing the "scout before settler" behavior and the insights about users hunting for missing fields helped us identify which navigation patterns to prioritize.
-
-Through this iterative process, we developed several new hypotheses that would guide our refined prototype:
+The user research showing the "scout before settler" behavior and the insights about users hunting for missing fields helped us identify which navigation patterns to prioritize.
 
 1. If we provide a visual map of all sections at the start, users will feel in control even when focused on a single section, because they've already scouted the territory.
 
@@ -307,8 +285,6 @@ Through this iterative process, we developed several new hypotheses that would g
 We started iterating to figure out how a new user interface built around our hypothesis of providing our users a visual map of all the sections at the start, i was instantly reminded of the first screen a user sees when they click on 'Apply now' (current implementation)
 
 ![[Pasted image 20250811160315.png]]
-
-The solution was starring right at my face, i knew instantly what direction i would be taking this into.
 
 ---
 
@@ -382,8 +358,6 @@ Users weren't just filling out a form anymore - they were strategizing their app
 - Others dove into complex sections when they had more time (work experience, additional questions)
 
 The completion patterns told the story: instead of 90% following our prescribed linear path, we saw users creating distinct navigation patterns based on their personal preferences and circumstances.
-
-The Transparency Tax... Disappeared
 
 Here's where we got our biggest surprise. Remember how showing all pre-filled fields almost doubled completion time in our first iteration? The visual checkmarks changed things:
 
