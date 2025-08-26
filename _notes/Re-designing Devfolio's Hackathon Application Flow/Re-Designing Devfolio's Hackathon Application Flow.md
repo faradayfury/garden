@@ -66,7 +66,6 @@ Devfolio pre-fills a lot of information for the users applying to a hackathon to
 
 The invisible profile trap: Users were unknowingly submitting outdated information because Devfolio pre-filled their profile data invisibly. The fields stored by Devfolio is also used to create a public Devfolio profile for a user which they can edit and maintain. Although users could edit the information which was not visible in the application by editing their profile, it was not obvious for the users. The initial reasoning to not show the pre-filled fields was to reduce the cognitive load of a user while filling a form which tend to be long.
 
-We also discovered a lot of users would only come to Devfolio to apply to hackathons and were not aware of their profile which they can edit. This caused a bigger problem: users were unknowingly submitting outdated information - a junior developer title from 2 years ago, an old university email, skills they'd long since surpassed.
 <br>
 <br>
 
@@ -74,15 +73,15 @@ B. Watching the User Recordings:
 
 While the initial purpose for this was to get more visibility on how the users interacted with the interface, we quickly discovered more & broader issues which increased the scope for the project.
 
-- Users would struggle to find the submit button (the most important action was playing hide-and-seek)
+- Users would struggle to find the submit button
 
 - About 75% of the users would drop off from the webpage after getting to the application flow.
 
 - The remaining users who stick, would take ~20 seconds before they started filling details into the application.
 
-- Only ~10% of the users would stick around to complete the application in one go (~90% needed multiple attempts)
+- Only ~10% of the users would stick around to complete the application in one go
 
-- About 40% of users filled their applications on a mobile device (on a non-responsive website - we were setting them up to fail)
+- About 40% of users filled their applications on a mobile device
   <br>
   <br>
 
@@ -105,26 +104,10 @@ To identify and gather more information on how participants approached applying 
 From the comprehensive research above, our priorities became clear. We needed to figure out:
 
 1. How might we reduce the initial ~75% drop-off rate in the application flow?
-
-   The data shows users spending ~10-15 seconds before abandoning the page, with new users feeling overwhelmed and unable to find a clear starting point. This massive drop-off represents ~32,500 potential participants lost each month.
-   <br>
-   <br>
-
 2. How might we create a mobile responsive experience?
-
-   With ~40% of users applying via mobile devices (often coming from Twitter) but facing a non-responsive interface, we're forcing ~20,000 users monthly to "come back later on desktop." Most never did.
-   <br>
-   <br>
-
 3. How might we surface pre-filled information transparently while maintaining efficiency?
-
-   Users are unaware of auto-filled data from their profiles, leading to outdated or incorrect information being submitted without their knowledge. We need to make the invisible visible without overwhelming.
-   <br>
-   <br>
-
 4. How might we create clearer navigation and action hierarchy?
 
-   Users struggle to find critical elements like the submit button and don't understand where to begin, suggesting that our information architecture had become a maze, not a map.
    <br>
    <br>
 
@@ -260,7 +243,7 @@ Based on the user feedback, we had identified a critical tension to resolve, but
 
 But there was another tension lurking in our data: the transparency tax. While users loved seeing all their pre-filled information, it almost doubled their completion time. We'd given them control but stolen their time.
 
-We explored numerous directions:
+We explored:
 
 - Should we show all sections upfront or reveal them progressively?
 - Would a stepped indicator with preview capabilities maintain focus while providing overview?
