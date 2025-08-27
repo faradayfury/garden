@@ -488,7 +488,7 @@ Drop-off rate: 75% → 31%
 - Users no longer bounced immediately upon seeing the interface
 - The clear section structure with visual progress indicators kept them engaged
 
-Mobile completion rate: 5% → 22%
+Mobile completion rate: 5% → 15%
 
 - Not quite desktop parity, but a great improvement
 - Users could now realistically complete applications on their phones
