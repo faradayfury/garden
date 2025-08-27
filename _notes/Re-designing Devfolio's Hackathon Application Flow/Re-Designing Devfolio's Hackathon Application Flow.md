@@ -81,7 +81,7 @@ While the initial purpose for this was to get more visibility on how the users i
 
 - Only ~10% of the users would stick around to complete the application in one go
 
-- About 40% of users filled their applications on a mobile device
+- About 40% of users applied on their mobile devices.
   <br>
   <br>
 
@@ -493,7 +493,7 @@ Mobile completion rate: 5% → 22%
 - Not quite desktop parity, but a great improvement
 - Users could now realistically complete applications on their phones
 
-Single-session completion: 10% → 42%
+Single-session completion: 10% → 15%
 
 - The visual map helped users gauge time commitment upfront
 - Auto-save meant they could confidently return if needed
